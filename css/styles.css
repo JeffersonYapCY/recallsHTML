@@ -1,8 +1,95 @@
+/* Generic a p h123 */
+
 p {
-  color: navy;
   line-height: 1.5;
 }
 
-h1 {
-  color: darkgreen;
+a {
+  line-height: 1.5;
 }
+
+H1 {
+    text-align: center;
+    background-color: white;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+}
+
+H2 {
+    background-color: #EFC;
+    padding-left: 0.5em;
+    border-bottom: 1px dashed #888;
+}
+
+H3 {
+    background-color: #FFC;
+    padding-left: 0.5em;
+}
+
+
+/* Make space at left and right if it's desktop */
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 20px;
+  }
+}
+
+/* Background colour */
+
+body {
+  background-color: rgb(255, 235, 235);
+  font-family: Arial, sans-serif, 'Times New Roman', Times, serif;
+}
+
+.resume-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+}
+
+
+/* table */
+
+table {
+  width: auto;            /* shrink to fit content */
+  margin: 0 auto 1.5em;   /* center horizontally and add bottom margin */
+  border-collapse: collapse;
+  line-height: 1.5em;
+  font-size: 20px;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #ffb92e; /* warm highlight */
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #ffe4b5; /* subtle hover */
+  cursor: pointer;
+}
+
+li {
+  transition: background-color 0.6s ease;
+}
+
+li:hover {
+  background-color: #daffd4; /* subtle hover */
+  cursor: pointer;
+}
+
