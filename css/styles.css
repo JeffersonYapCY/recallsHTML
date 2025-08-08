@@ -60,7 +60,7 @@ table {
   margin: 0 auto 1.5em;   /* center horizontally and add bottom margin */
   border-collapse: collapse;
   line-height: 1.5em;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 th, td {
@@ -89,7 +89,35 @@ li {
 }
 
 li:hover {
-  background-color: #daffd4; /* subtle hover */
+  background-color: #b9eeb2; /* subtle hover */
   cursor: pointer;
 }
 
+/* Navigation bar */
+.navbar{
+    position: sticky;
+    top: 0%;
+    z-index: 100; /* Ensures navbar stays above other content */
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center; /* Centers li items horizontally */
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar li{
+    float: left;
+}
